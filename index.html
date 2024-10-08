@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anonymous Message</title>
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Load EmailJS library -->
     <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-(function(){
-  emailjs.init({
-    publicKey: "MMrJwhtZGCl60ktAU",
-  });
-})();
-</script>
-<script src="./script.js"></script>
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <!-- Initialize EmailJS with the correct public key -->
+    <script type="text/javascript">
+      (function() {
+        emailjs.init("MMrJwhtZGCl60ktAU");  // Correct initialization
+      })();
+    </script>
+    
+    <!-- Load the JavaScript file for handling form submission -->
+    <script src="./script.js"></script>
 </head>
 <body>
     <div class="container">

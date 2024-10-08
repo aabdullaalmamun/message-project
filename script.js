@@ -5,7 +5,7 @@ document.getElementById('messageForm').addEventListener('submit', function(event
     const messageContent = document.getElementById('message').value;
 
     // Send the message via EmailJS
-    emailjs.send("service_uuneiqk","template_fp5e37j", {
+    emailjs.send("service_uuneiqk", "template_fp5e37j", {
         message: messageContent
     }).then(function(response) {
         document.getElementById('status').textContent = "Message sent successfully!";
